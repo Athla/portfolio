@@ -22,3 +22,4 @@ export default function Home() {
     </main>
   )
 }
+/* eslint-disable-line react/no-unescaped-entities */
