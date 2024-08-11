@@ -15,7 +15,7 @@ export function Experience(){
             <Skill image="/go.svg" measure={4} years="2 year"/>
             <Skill image="/python.svg" measure={4} years="2 years"/>
             <Skill image="/ts.png" measure={2} years="1 years"/>
-            <Skill image="/react.png" measure={1} years="1 years"/>
+            <Skill image="/react.png" measure={2} years="1 years"/>
           </div>
           <p className="text-small"> PS: Those measurements indicate the time I've spent working with the technologies. </p>
           <p className="text-extra-small"> PSS: I use neovim btw! </p>
