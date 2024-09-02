@@ -12,7 +12,7 @@ export function Experience() {
       <p>Worked mainly with Microservices, Internal API's and Data Automations.</p>
       <div className="experience-time">
         <SectionTitle text="Tech Stack" />
-        <Skill image="/go.svg" measure={4} years="2 year" />
+        <Skill image="/go.svg" measure={4} years="2 years" />
         <Skill image="/python.svg" measure={4} years="2 years" />
         <Skill image="/ts.png" measure={2} years="1 year" />
         <Skill image="/react.png" measure={2} years="1 year" />
