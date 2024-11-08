@@ -94,3 +94,94 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.carousel-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 2rem;
+    min-height: 300px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.project-card h2 {
+    color: #646cff;
+    margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+    color: #888;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.technologies {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    background-color: #2a2a2a;
+    padding: 0.3rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    color: #646cff;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #646cff;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.carousel-button:hover {
+    color: #535bf2;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #444;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #646cff;
+}
+
+@media (prefers-color-scheme: light) {
+    .project-card {
+        background-color: #f9f9f9;
+    }
+
+    .tech-tag {
+        background-color: #eaeaea;
+    }
+}

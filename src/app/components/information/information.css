@@ -8,7 +8,8 @@
 
     grid-area: info;
 
-    .languages-info {
+    .languages-info,
+    .educational-info {
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -21,6 +22,8 @@
         font-weight: 300;
         font-size: 18px;
         line-height: 28px;
+        display: block;
+        width: 100%;
     }
 
     @media (min-width: 768px) {

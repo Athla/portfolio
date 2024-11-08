@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import "./skill.scss"
+import "./skill.css"
 
 interface SkillProps {
     image: string,
@@ -8,8 +8,8 @@ interface SkillProps {
     measure: number,
 }
 
-export function Skill(props : SkillProps){
-    return(
+export function Skill(props: SkillProps) {
+    return (
         <div className="experience-language">
             <Image
                 src={props.image}
@@ -23,6 +23,6 @@ export function Skill(props : SkillProps){
                     <span>{props.years}</span>
                 </div>
             </div>
-      </div>
+        </div>
     )
 }
