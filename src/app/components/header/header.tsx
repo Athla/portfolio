@@ -1,7 +1,7 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-import "./header.css"
-import { Info } from '../information/information'
+import "./header.css";
+import { Info } from "../information/information";
 
 export function Header() {
   return (
@@ -12,11 +12,11 @@ export function Header() {
       </div>
       <Image
         src="/me.jpeg"
-        alt="Vercel Logo"
+        alt="Guilherme Rodrigues"
         width={325}
         height={325}
         priority
       />
     </div>
-  )
+  );
 }

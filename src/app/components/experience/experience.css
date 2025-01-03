@@ -4,252 +4,62 @@
     align-items: center;
     justify-content: center;
     max-width: 500px;
-
     gap: 24px;
-
     grid-area: experience;
-
-p {
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 1.6;
-        color: var(--text-secondary);
-        text-align: center;
-        letter-spacing: 0.01em;
-        margin: 0; 
-        transition: color 0.2s ease;
-    }
-
-    /* Add emphasis to the first paragraph */
-    p:first-of-type {
-        font-weight: 400;
-        color: var(--text-primary, #333); /* Fallback color added */
-    }
-
-    .text-small {
-        font-weight: 300;
-        font-size: 13px;
-        line-height: 1.6;
-        color: var(--text-secondary);
-        text-align: left;
-        opacity: 0.9; /* Slightly reduce opacity for hierarchy */
-    }
-
-    .text-extra-small {
-        font-weight: 300;
-        font-size: 9px;
-        line-height: 1.6;
-        color: var(--text-secondary);
-        text-align: left;
-        opacity: 0.8; /* Further reduce opacity for hierarchy */
-    }
-
-    .experience-time {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 8px;
-        width: 100%; /* Ensure full width */
-    }
-
-    @media (min-width: 768px) {
-        align-items: flex-start;
-
-        p {
-            font-size: 20px;
-            line-height: 36px;
-            text-align: start;
-        }
-    }
 }
 
-.project-card {
-    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
-    border-radius: 16px;
-    padding: 2.5rem;
-    min-height: 350px;
-    width: 100%;
-    max-width: 800px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-}
-
-.project-card::-webkit-scrollbar {
-    display: none;
-}
-
-.project-card h2 {
-    color: #646cff;
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    width: 100%;
-}
-
-.project-card p {
+.experience p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.6;
     color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin: 0;
+    transition: color 0.2s ease;
+}
+
+/* Add emphasis to the first paragraph */
+.experience p:first-of-type {
+    font-weight: 400;
+    color: var(--text-primary, #333); /* Fallback color added */
+}
+
+.experience .text-small {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-secondary);
     text-align: left;
-    max-width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    letter-spacing: 0.3px;
+    opacity: 0.9; /* Slightly reduce opacity for hierarchy */
 }
 
-.tech-tag {
-    background: rgba(100, 108, 255, 0.1);
-    padding: 0.6rem 1.2rem;
-    border-radius: 20px;
-    font-size: 1rem;
-    color: #646cff;
-    border: 1px solid rgba(100, 108, 255, 0.2);
-    transition: all 0.3s ease;
-    font-weight: 500;
+.experience .text-extra-small {
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    text-align: left;
+    opacity: 0.8; /* Further reduce opacity for hierarchy */
 }
 
-.tech-tag:hover {
-    background: rgba(100, 108, 255, 0.2);
-    transform: translateY(-2px);
-}
-
-.carousel-button {
-    background: rgba(100, 108, 255, 0.1);
-    border: 1px solid rgba(100, 108, 255, 0.2);
-    font-size: 1.2rem;
-    color: #646cff;
-    cursor: pointer;
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-    border-radius: 50%;
+.experience .experience-time {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.carousel-button:hover {
-    background: rgba(100, 108, 255, 0.2);
-    transform: scale(1.1);
-}
-
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: rgba(100, 108, 255, 0.2);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(100, 108, 255, 0.2);
-}
-
-.dot.active {
-    background-color: #646cff;
-    transform: scale(1.2);
-}
-
-.carousel-container {
-    grid-area: carousel;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1rem;
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 8px;
+    width: 100%; /* Ensure full width */
 }
 
-.carousel-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.carousel-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-}
-
-.carousel-dots {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 1rem 0;
-}
-
-@media (max-width: 800px) {
-    .project-card {
-        padding: 2rem;
-        min-height: 550px;
-        margin: 0 1rem;
-        width: calc(100% - 2rem);
+@media (min-width: 768px) {
+    .experience {
+        align-items: flex-start;
     }
 
-    .project-card h2 {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-        line-height: 1.4;
-        padding: 0 0.5rem;
+    .experience p {
+        font-size: 20px;
+        line-height: 36px;
+        text-align: start;
     }
-
-    .project-card p {
-        font-size: 1rem;
-        line-height: 1.8;
-        margin-bottom: 2.5rem;
-        padding: 0 0.5rem;
-        max-width: 100%;
-    }
-
-    .carousel-container {
-        padding: 1rem;
-    }
-
-    .carousel-content {
-        gap: 0.5rem;
-    }
-
-    .technologies {
-        padding: 0.5rem;
-        gap: 1rem;
-        margin-top: auto;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .tech-tag {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-    }
-
-    .carousel-button {
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-    }
-}
-
-.technologies {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    width: 100%;
-    margin-top: auto;
-    padding-top: 1.5rem;
 }
